@@ -17,3 +17,7 @@ def register(request):
 
 def link(request):
     return redirect('https://www.github.com/')
+
+def registerdata(request):
+    print(request.method)
+    print(request.POST)

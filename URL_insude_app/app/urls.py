@@ -6,5 +6,6 @@ urlpatterns = [
 #    path('home/',home),
      path('home/',home),
      path("registration/",register),
+     path("registerData/",registerdata,name='register'),
      path('link/',link),    
 ]
