@@ -21,3 +21,9 @@ def link(request):
 def registerdata(request):
     print(request.method)
     print(request.POST)
+    name=request.POST.get("name")
+    email=request.POST.get("email")
+    phone=request.POST.get("phone")
+    password=request.POST.get("password")
+    re_password=request.POST.get("re_password")
+    print(name,email,phone,password,re_password)
