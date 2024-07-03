@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 from django.shortcuts import render,redirect
+from .models import Student
 # Create your views here.
 
 def home(response):
@@ -26,4 +27,9 @@ def registerdata(request):
     phone=request.POST.get("phone")
     password=request.POST.get("password")
     re_password=request.POST.get("re_password")
-    print(name,email,phone,password,re_password)
+    # print(name,email,phone,password,re_password)
+
+    Student.objects.create(Name=name,Email=email,Contect=phone,Password=password,Re_Password=re_password)
+    print("Data saved")
+
+
