@@ -32,4 +32,14 @@ def registerdata(request):
     Student.objects.create(Name=name,Email=email,Contect=phone,Password=password,Re_Password=re_password)
     print("Data saved")
 
+def home1(request):
+    return render(request,'home.html')
 
+def about(request):
+    return render(request,'about.html')
+
+def contect(request):
+    return render(request,'cotect.html')
+
+def service(request):
+    return render(request,'service.html')        
