@@ -41,5 +41,8 @@ def about(request):
 def contect(request):
     return render(request,'cotect.html')
 
+def gallery(request):
+    return render(request,'gallery.html')
+
 def service(request):
     return render(request,'service.html')        

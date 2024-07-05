@@ -8,7 +8,33 @@
 <body>
     {% extends 'base.html' %}
     {% block content %}
-    <h1>This is contect page</h1>
+    <div id="contectus">
+        <div id="contect_data1">
+            <p
+                style="font-size: 40px; font-weight: bold; color: rgb(219, 104, 46);font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                Contact Us</p>
+        </div>
+        <div>
+            <div id="contect_data2">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone Number">
+                <textarea name="text" id="" cols="30" rows="10" placeholder="Massage"></textarea>
+
+                <div id="contect_button">SAVE</div>
+            </div>
+
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3733223.4919059603!2d78.42099679999998!3d23.970125000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694154133566!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
     {% endblock %}
 </body>
 </html>
