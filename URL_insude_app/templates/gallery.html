@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    {% extends 'base.html' %}
+    
     {% block content %}
 
     <div id="gallery">
@@ -19,59 +21,64 @@
                 unknown printer took a galley of type and scra make a type specimen book. It has</p>
         </div>
         <div class="row">
-            <div class="img"><img src="images/img-1.png" alt="" height="300px" ; width="350px" ;>
+            <div class="img"><img src="{% static 'images/img-1.png' %}" alt="" height="300px" ; width="350px" ;>
                 <div class="srrr">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
 
             </div>
-            <div class="img"><img src="images/img-2.png" alt="" height="300px" ; width="350px" ;>
+            <div class="img"><img src="{% static 'images/img-2.png' %}" alt="" height="300px" ; width="350px" ;>
                 <div class="srrr">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </div>
-            <div class="img"><img src="images/img-3.png" alt="" height="300px" ; width="350px" ;>
-                <div class="srrr">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="img"><img src="images/img-4.png" alt="" height="300px" ; width="350px" ;>
-                <div class="srrr">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="img"><img src="images/img-5.png" alt="" height="300px" ; width="350px" ;>
-                <div class="srrr">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div class="img"><img src="images/img-6.png" alt="" height="300px" ; width="350px" ;>
+            <div class="img"><img src="{% static 'images/img-3.png' %}" alt="" height="300px" ; width="350px" ;>
                 <div class="srrr">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="img"><img src="images/img-7.png" alt="" height="300px" ; width="350px" ;>
+            <div class="img"><img src="{% static 'images/img-4.png' %}" alt="" height="300px" ; width="350px" ;>
                 <div class="srrr">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </div>
-            <div class="img"><img src="images/img-8.png" alt="" height="300px" ; width="350px" ;>
+            <div class="img"><img src="{% static 'images/img-5.png' %}" alt="" height="300px" ; width="350px" ;>
                 <div class="srrr">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </div>
-            <div class="img"><img src="images/img-9.png" alt="" height="300px" ; width="350px" ;>
+            <div class="img"><img src="{% static 'images/img-6.png' %}" alt="" height="300px" ; width="350px" ;>
                 <div class="srrr">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
-        <div class="button"><button><a href="index.html">See More</a></button> </div>
+        <div class="row">
+            <div class="img"><img src="{% static 'images/img-7.png' %}" alt="" height="300px" ; width="350px" ;>
+                <div class="srrr">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="img"><img src="{% static 'images/img-8.png' %}" alt="" height="300px" ; width="350px" ;>
+                <div class="srrr">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="img"><img src="{% static 'images/img-9.png' %}" alt="" height="300px" ; width="350px" ;>
+                <div class="srrr">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="button"><button><a href="{% url 'home' %}">See More</a></button> </div>
     </div>
+
+    <video width="30%" height="20%" controls>
+        <source src="{% static 'videos/songvideo.mp4' %}" type="video/mp4">
+        hiiii
+    </video>
 
     {% endblock %}
 </body>
